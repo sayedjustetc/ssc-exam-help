@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.justetc.oral_communications.workplace"
+    android:versionCode="4"
+    android:versionName="4.0">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/oral"
+        android:label="Workplace Oral Communication by Justetc">
+        
+        <activity
+            android:name="com.justetc.oral_communications.workplace.Main"
+            android:label="Workplace Oral Communication  by Justetc"
+            android:theme="@style/FullscreenTheme"
+            android:finishOnTaskLaunch="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+    </application>
+
+</manifest>
